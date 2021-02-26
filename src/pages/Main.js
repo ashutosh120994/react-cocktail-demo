@@ -53,7 +53,7 @@ const Main = () => {
     }, [searchTerm, filterType, filterByCategory, filterByIngredient]);
     return (
         <>
-            <div class="sidenav">
+            <div className="sidenav">
                 <Link to='/'>CockTail Demo</Link>
                 <SearchForm
                     setSearchTerm={setSearchTerm}
@@ -65,7 +65,7 @@ const Main = () => {
                     setFilterByIngredient={setFilterByIngredient}
                 />
             </div>
-            <div class="main">
+            <div className="main">
                 <CocktailList loading={loading} cocktails={cocktails}/>
             </div>
         </>
